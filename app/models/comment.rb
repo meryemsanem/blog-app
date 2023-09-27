@@ -6,7 +6,7 @@ class Comment < ApplicationRecord
 
   private
 
-  def update_post_comments_counter
-    post.update(comments_count: post.comments.count)
-  end
+def update_post_comments_counter
+  post.update(commentsCounter: post.comments.count)
+end
 end
