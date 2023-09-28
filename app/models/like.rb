@@ -10,4 +10,3 @@ class Like < ApplicationRecord
     post.update(likesCounter: post.likes.count)
   end
 end
-

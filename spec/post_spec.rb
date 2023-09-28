@@ -27,30 +27,24 @@ RSpec.describe Post, type: :model do
     subject.commentsCounter = -1
     expect(subject).to_not be_valid
   end
-  
-it "increments the user's posts_counter by 1" do
-  user = create(:user)
-  post = build(:post, author: user)
-  
-  expect { post.save }.to change { user.reload.posts_counter }.by(1)
-end
+
+  it "increments the user's posts_counter by 1" do
+    user = create(:user)
+    post = build(:post, author: user)
+
+    expect { post.save }.to change { user.reload.posts_counter }.by(1)
+  end
 
   it 'should display last 5 recent comments' do
     post = create(:post, author: user)
 
-    create(:comment, post: post, created_at: 1.hour.ago)
-    create(:comment, post: post, created_at: 1.hour.ago)
-    create(:comment, post: post, created_at: 1.hour.ago)
-    create(:comment, post: post, created_at: 1.hour.ago)
-    create(:comment, post: post, created_at: 1.hour.ago)
+    create(:comment, post:, created_at: 1.hour.ago)
+    create(:comment, post:, created_at: 1.hour.ago)
+    create(:comment, post:, created_at: 1.hour.ago)
+    create(:comment, post:, created_at: 1.hour.ago)
+    create(:comment, post:, created_at: 1.hour.ago)
     recent_comments = post.recent_comments
 
     expect(recent_comments.count).to eq(5)
   end
 end
-
-
-
-
-
-
