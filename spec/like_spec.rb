@@ -6,7 +6,7 @@ RSpec.describe Like, type: :model do
     subject { Like.new(user:, post:) }
   before { subject.save }
 
-  it '#like_counter' do
+  it 'update the likes counter' do
   expect {
     like = Like.create(user: user, post: post)
     like.save
