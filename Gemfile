@@ -5,6 +5,10 @@ ruby '3.2.2'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+group :development, :test do
+  gem 'rspec-rails'
+end
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.8'
 
@@ -71,3 +75,4 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
 end
+
