@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Users', type: :request do
   describe 'GET /index' do
-    before :each do 
+    before :each do
       get '/users'
     end
 
@@ -15,10 +15,10 @@ RSpec.describe 'Users', type: :request do
     end
 
     it 'checks if the response body includes the "All users" placeholder text' do
-      expect(response.body).to include('All users') 
+      expect(response.body).to include('All users')
     end
   end
-describe 'GET /show' do
+  describe 'GET /show' do
     before :each do
       get '/users/:id'
     end
@@ -32,7 +32,7 @@ describe 'GET /show' do
     end
 
     it 'checks if the response body includes the "User profile" placeholder text' do
-      expect(response.body).to include('User profile') 
+      expect(response.body).to include('User profile')
     end
   end
 end
