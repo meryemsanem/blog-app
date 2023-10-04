@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Users', type: :request do
-  let(:user) { create(:user) } 
+  let(:user) { create(:user) }
 
   describe 'GET /index' do
     before :each do
@@ -16,14 +16,14 @@ RSpec.describe 'Users', type: :request do
       expect(response).to render_template(:index)
     end
 
- it 'checks if the response body includes' do
-  expect(response.body).to include()
-end
+    it 'checks if the response body includes' do
+      expect(response.body).to include
+    end
   end
 
   describe 'GET /show' do
     before :each do
-      get "/users/#{user.id}" 
+      get "/users/#{user.id}"
     end
 
     it 'checks the response status' do
@@ -35,7 +35,7 @@ end
     end
 
     it 'checks if the response body includes the "Bio" text' do
-  expect(response.body).to include('Bio')
-end
+      expect(response.body).to include('Bio')
+    end
   end
 end

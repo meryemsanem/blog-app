@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
-  let(:user) { create(:user) } 
+  let(:user) { create(:user) }
 
   describe 'GET /index' do
     before :each do
@@ -17,12 +17,12 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'checks if the response body includes the "Number of posts:" text' do
-  expect(response.body).to include('Number of posts:')
-end
+      expect(response.body).to include('Number of posts:')
+    end
   end
 
   describe 'GET /show' do
-    let(:post) { create(:post, author: user) } 
+    let(:post) { create(:post, author: user) }
     before :each do
       get "/users/#{user.id}/posts/#{post.id}"
     end
@@ -36,7 +36,7 @@ end
     end
 
     it 'checks if the response body includes the "Comments:" text' do
-  expect(response.body).to include('Comments:')
-end
+      expect(response.body).to include('Comments:')
+    end
   end
 end
