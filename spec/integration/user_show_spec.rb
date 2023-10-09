@@ -22,7 +22,7 @@ RSpec.describe 'users#show', type: :feature do
       Post.create(author: @user1, title: 'User 1 Post 2', text: 'This is User 1 Post 2',
                   commentsCounter: 0, likesCounter: 0),
       Post.create(author: @user1, title: 'User 1 Post 3', text: 'This is User 1 Post 3',
-                  commentsCounter: 0, likesCounter: 0), 
+                  commentsCounter: 0, likesCounter: 0),
       Post.create(author: @user2, title: 'User 2 Post 1', text: 'This is User 2 Post 1',
                   commentsCounter: 0, likesCounter: 0),
       Post.create(author: @user2, title: 'User 2 Post 2', text: 'This is User 2 Post 2',
@@ -33,7 +33,7 @@ RSpec.describe 'users#show', type: :feature do
 
     visit users_url
   end
-   describe '#show page' do
+  describe '#show page' do
     before(:each) do
       visit user_path(@user1)
     end
@@ -59,12 +59,12 @@ RSpec.describe 'users#show', type: :feature do
         expect(page).to have_content(post.text)
       end
     end
-      
-  it 'can see a button to view all user posts' do
+
+    it 'can see a button to view all user posts' do
       expect(page).to have_selector('button', text: 'See all posts')
     end
-    
-    it 'redirects to the user posts index page when "See all posts" button is clicked'  do
+
+    it 'redirects to the user posts index page when "See all posts" button is clicked' do
       visit user_path(@user1)
       click_link 'See all posts'
       expect(page).to have_current_path(user_posts_path(@user1))
