@@ -95,6 +95,11 @@ it will install the required gemfile for running the project
 - GitHub: [Meryem Sanem Küçükbayram](https://github.com/meryemsanem)
 - LinkedIn: [Meryem Sanem Küçükbayram](https://www.linkedin.com/in/meryemsanemkucukbayram/)
 
+👤 **Abd elhakim Zayan**
+
+- GitHub: [@Abd elhakim Zayan](https://github.com/abdozayan12)
+- LinkedIn: [@Abd elhakim Zayan](https://www.linkedin.com/in/abdozayan/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
