@@ -90,3 +90,44 @@
 .comment {
   font-size: 16px;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.field {
+  width: 300px;
+  margin: 15px 1px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+}
+
+.submit {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  background-color: white;
+  -webkit-box-shadow: 3px 4px 5px 1px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 3px 4px 5px 1px rgba(0, 0, 0, 1);
+  box-shadow: 3px 4px 5px 1px rgba(0, 0, 0, 1);
+}
+
+.links-container {
+  width: 400px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
