@@ -101,7 +101,7 @@
 
 .field {
   width: 300px;
-  margin: 15px 0px;
+  margin: 15px 1px;
 }
 
 .input {
@@ -115,9 +115,9 @@
   font-size: 18px;
   margin-bottom: 10px;
   background-color: white;
-  -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 1);
-  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 3px 4px 5px 1px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 3px 4px 5px 1px rgba(0, 0, 0, 1);
+  box-shadow: 3px 4px 5px 1px rgba(0, 0, 0, 1);
 }
 
 .links-container {
