@@ -85,6 +85,18 @@
   list-style: none;
   padding: 4%;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.delete-comment-btn {
+  border: none;
+  background-color: #d91717;
+  color: white;
+  padding: 4px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .comment {
@@ -130,4 +142,14 @@
 .link {
   text-decoration: none;
   color: black;
+}
+
+.delete-btn {
+  border: none;
+  background-color: #d91717;
+  color: white;
+  padding: 8px;
+  margin-right: 3%;
+  cursor: pointer;
+  font-size: 14px;
 }
