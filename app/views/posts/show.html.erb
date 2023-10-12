@@ -24,6 +24,9 @@
         <li >
           <span><%= User.find(comment.user_id).name %>:</span>
           <span><%= comment.text %></span>
+          <% if can? :destroy, comment %>
+        <%= button_to "Delete Comment", user_post_comment_path(user_id: @user.id, post_id: post.id, id: comment.id), method: :delete,  class: 'delete-comment-btn' %>
+      <% end %>
         </li>
       <% end %>
     </ul>
