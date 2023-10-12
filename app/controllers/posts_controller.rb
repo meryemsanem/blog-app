@@ -31,10 +31,10 @@ class PostsController < ApplicationController
     authorize! :destroy, @post
     if @post.destroy
       flash.now[:success] = 'Post was successfully destroyed!'
-      redirect_to user_posts_path
+      # redirect_to user_posts_path
     else
       flash[:error] = 'Post couldnt be destroyed!'
-      redirect_to user_posts_path
+      # redirect_to user_posts_path
     end
   end
 
