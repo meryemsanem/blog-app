@@ -131,3 +131,13 @@
   text-decoration: none;
   color: black;
 }
+
+.delete-btn {
+  border: none;
+  background-color: #d91717;
+  color: white;
+  padding: 8px;
+  margin-right: 3%;
+  cursor: pointer;
+  font-size: 14px;
+}
